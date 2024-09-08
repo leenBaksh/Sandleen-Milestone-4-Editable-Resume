@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Editable Resume</title>
+  <style>
+    body {
+        background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4vTYFRQrOEzf8F4LTYOl2e_V99EjmT1Onf6NCx3DQQKwpjB5MjVLJLsdbkFZEsvRgfNA&usqp=CAU);
+        background-size: cover;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    .editable-section {
+      padding: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #7b0542;
+    }
+
+    .editing {
+      border: 2px solid #ff00ee;
+      background-color: #efc4e3;
+    }
+
+    
+    button[type="submit"] {
+        background-color: #60064a;
+        color: #3b2633;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    save.button {
+      background-color: #810b5a;
+      color: #731959;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      position: relative;
+      transition: background-color 0.3s ease;
+    }
+
+    button[type="submit"]:hover {
+    background-color: #570743;
+}
+  </style>
+</head>
+<body>
+
+  <section id="education" class="editable-section" contenteditable="true">
+    <h2>Education</h2>
+    <p>Bachelor of Science in Computer Science, XYZ University, 2020</p>
+  </section>
+
+  <section id="work-experience" class="editable-section" contenteditable="true">
+    <h2>Work Experience</h2>
+    <p>Software Engineer at ABC Corp (2021 - Present)</p>
+  </section>
+
+  <section id="skills" class="editable-section" contenteditable="true">
+    <h2>Skills</h2>
+    <ul>
+      <li>JavaScript</li>
+      <li>TypeScript</li>
+      <li>React</li>
+    </ul>
+  </section>
+
+  <button class="save" id="save-btn">Save Changes</button>
+
+  <script src="indexscript.js"></script>
+</body>
+</html>
